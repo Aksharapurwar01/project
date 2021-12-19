@@ -1,0 +1,8 @@
+ console.log("clicked add button")
+        const title = document.getElementById("title") as HTMLInputElement;
+        console.log(title.value)
+         const result = await axios.post(" http://localhost:3000/users",{
+            title : title.value
+        })
+        console.log("result----->",result)
+id="title"
